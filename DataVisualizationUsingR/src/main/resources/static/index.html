@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Visualization</title>
+</head>
+
+<body>
+
+<h1>Col-1 Data</h1>
+
+<img id="plot" src="/plot" alt="plot">
+
+<script>
+    setInterval(function () {
+        document.getElementById("plot").src = "/plot?" + new Date().getTime();
+    }, 1000);
+</script>
+
+</body>
+</html>
